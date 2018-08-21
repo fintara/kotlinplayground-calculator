@@ -20,10 +20,12 @@ version '1.0.0'
 repositories {
     mavenCentral()
     maven { url 'http://dl.bintray.com/jetbrains/spek' }
+    maven { url 'https://jitpack.io' }
 }
 
 dependencies {
     compile 'org.jetbrains.kotlin:kotlin-stdlib-jdk8'
+    implementation 'com.github.fintara:parser:680b884'
     testCompile 'org.jetbrains.spek:spek-api:1.1.5'
     testCompile 'org.jetbrains.kotlin:kotlin-test'
     testCompile 'org.jetbrains.kotlin:kotlin-reflect'
